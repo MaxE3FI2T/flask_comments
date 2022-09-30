@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>WebshopLLMN</title>
-    <link rel="stylesheet" href="static/css/styles.css">
-</head>
-<body>
-<header>
-    <img src="static/pictures/pepeSad.jpg">
-</header>
-<div>
-    {% block content %}
+{% extends 'base.html' %}
 
-    {% endblock %}
-</div>
-</body>
+{% block content %}
+<h1>LLMN Webshop</h1>
+<h2>Comments</h2>
+<p>Bestell deinen Computer <a href="{{url_for('main.engraves')}}">hier</a>!</p>
+{% endblock %}

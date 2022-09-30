@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>LLMN Webshop</h1>
+<form method="post" action="/engraves">
+    <input name="txt" type="text">
+    <button id="save" type="submit">Jetzt bestellen</button>
+</form>
+
+<h1>Vorherige Gravuren</h1>
+{% for engrave in engraves %}
+<p>{{engrave}} </p>
+{% endfor %}
+
+{% endblock %}
